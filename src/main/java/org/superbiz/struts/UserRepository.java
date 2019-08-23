@@ -17,8 +17,9 @@
 */
 package org.superbiz.struts;
 
-import com.opensymphony.xwork2.ActionSupport;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-public class Index extends ActionSupport {
-
+@Repository
+public interface UserRepository extends CrudRepository<User, Long> {
 }
